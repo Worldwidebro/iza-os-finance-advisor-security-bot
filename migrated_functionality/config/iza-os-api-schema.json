@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "IZA OS Enterprise APIs",
+  "description": "Complete IZA OS ecosystem API collection with 1,842 AI agents, MEMU dashboards, and WorldwideBro global infrastructure",
+  "url": "https://worldwidebro.com/iza-os/api",
+  "documentation": "https://worldwidebro.com/iza-os/api/docs",
+  "provider": {
+    "@type": "Organization",
+    "name": "IZA OS Enterprise Ecosystem"
+  },
+  "serviceType": "REST API",
+  "serviceUrl": "http://localhost:8000",
+  "apiVersion": "2.0.0",
+  "termsOfService": "https://worldwidebro.com/iza-os/terms",
+  "license": "https://worldwidebro.com/iza-os/license",
+  "endpoint": [
+    {
+      "@type": "EntryPoint",
+      "urlTemplate": "http://localhost:8000/health",
+      "httpMethod": "GET",
+      "description": "System health check endpoint",
+      "name": "Health Check"
+    },
+    {
+      "@type": "EntryPoint",
+      "urlTemplate": "http://localhost:8000/agents",
+      "httpMethod": "GET",
+      "description": "Get all AI agents (1,842 agents)",
+      "name": "Get Agents"
+    },
+    {
+      "@type": "EntryPoint",
+      "urlTemplate": "http://localhost:8000/metrics",
+      "httpMethod": "GET",
+      "description": "Get system metrics and performance data",
+      "name": "Get Metrics"
+    },
+    {
+      "@type": "EntryPoint",
+      "urlTemplate": "http://localhost:8000/api/keys",
+      "httpMethod": "GET",
+      "description": "API key management",
+      "name": "API Keys"
+    },
+    {
+      "@type": "EntryPoint",
+      "urlTemplate": "http://localhost:8000/api/jwt-tokens",
+      "httpMethod": "GET",
+      "description": "JWT token management",
+      "name": "JWT Tokens"
+    }
+  ],
+  "potentialAction": [
+    {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "http://localhost:8000/search?q={search_term_string}",
+        "httpMethod": "GET"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  ]
+}

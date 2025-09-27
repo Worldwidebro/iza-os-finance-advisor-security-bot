@@ -1,0 +1,67 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "IZA OS Ecosystem Metrics Dataset",
+  "description": "Comprehensive dataset of IZA OS ecosystem metrics, agent performance, and system health data",
+  "url": "https://worldwidebro.com/iza-os/dataset",
+  "version": "2.0.0",
+  "datePublished": "2024-01-01",
+  "dateModified": "2024-09-21",
+  "publisher": {
+    "@type": "Organization",
+    "name": "IZA OS Enterprise Ecosystem"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "IZA OS Team"
+  },
+  "license": "https://worldwidebro.com/iza-os/license",
+  "keywords": [
+    "artificial intelligence",
+    "api management",
+    "automated testing",
+    "global infrastructure",
+    "enterprise software",
+    "microservices",
+    "workflow automation"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "http://localhost:8000/metrics"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "http://localhost:8000/agents"
+    }
+  ],
+  "temporalCoverage": "2024-01-01/2024-12-31",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global"
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Total Agents",
+      "value": "1842"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "System Uptime",
+      "value": "99.97%"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ecosystem Value",
+      "value": "$1.4B+"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Active Businesses",
+      "value": "382"
+    }
+  ]
+}

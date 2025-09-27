@@ -1,0 +1,96 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareAgent",
+  "@id": "https://iza-os.com/agents/finance",
+  "name": "finance",
+  "description": "",
+  "url": "https://iza-os.com/agents/finance",
+  "agentType": "AI Agent",
+  "version": "1.0.0",
+  "dateCreated": "2024-01-01",
+  "dateModified": "2025-09-19T14:46:19.582252",
+  "creator": {
+    "@type": "Organization",
+    "name": "IZA OS",
+    "url": "https://iza-os.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "IZA OS",
+    "url": "https://iza-os.com"
+  },
+  "role": "",
+  "knowsAbout": [],
+  "capabilities": [],
+  "memberOf": {
+    "@type": "Organization",
+    "name": "",
+    "url": "https://iza-os.com/teams/"
+  },
+  "supervisor": {
+    "@type": "SoftwareAgent",
+    "name": "{Supervisor Agent Name}",
+    "url": "https://iza-os.com/agents/{supervisor-agent-name}"
+  },
+  "subOrganization": [
+    {
+      "@type": "SoftwareAgent",
+      "name": "{Sub Agent 1}",
+      "url": "https://iza-os.com/agents/{sub-agent-1}"
+    },
+    {
+      "@type": "SoftwareAgent",
+      "name": "{Sub Agent 2}",
+      "url": "https://iza-os.com/agents/{sub-agent-2}"
+    }
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "IZA OS",
+    "url": "https://iza-os.com"
+  },
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "{Job Title}",
+    "description": "{Job Description}",
+    "occupationLocation": {
+      "@type": "Place",
+      "name": "IZA OS Virtual Environment"
+    },
+    "skills": [
+      "{Skill 1}",
+      "{Skill 2}",
+      "{Skill 3}"
+    ]
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "IZA OS AI Academy",
+    "url": "https://iza-os.com/academy"
+  },
+  "award": [
+    {
+      "@type": "Award",
+      "name": "IZA OS Excellence Award",
+      "description": "Recognition for outstanding performance in autonomous operations",
+      "dateAwarded": "2024-12-01"
+    }
+  ],
+  "sameAs": [
+    "https://github.com/iza-os/agents/finance",
+    "https://docs.iza-os.com/agents/finance"
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://iza-os.com/agents/finance#webpage",
+    "name": "finance - IZA OS AI Agent",
+    "description": "",
+    "url": "https://iza-os.com/agents/finance",
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://iza-os.com/#website",
+      "name": "IZA OS",
+      "url": "https://iza-os.com"
+    }
+  }
+}

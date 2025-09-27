@@ -1,0 +1,53 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "IZA OS Enterprise Ecosystem Documentation",
+  "description": "Complete documentation for IZA OS unified ecosystem with 1,842 AI agents, MEMU dashboards, and WorldwideBro global infrastructure",
+  "url": "https://worldwidebro.com/iza-os/docs",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "IZA OS Enterprise Ecosystem"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://worldwidebro.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "IZA OS",
+        "item": "https://worldwidebro.com/iza-os"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Documentation",
+        "item": "https://worldwidebro.com/iza-os/docs"
+      }
+    ]
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2", "h3"]
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "WorldwideBro",
+    "url": "https://worldwidebro.com"
+  },
+  "datePublished": "2024-01-01",
+  "dateModified": "2024-09-21",
+  "author": {
+    "@type": "Organization",
+    "name": "IZA OS Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "WorldwideBro"
+  }
+}

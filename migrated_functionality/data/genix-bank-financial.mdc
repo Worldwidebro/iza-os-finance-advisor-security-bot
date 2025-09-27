@@ -1,0 +1,174 @@
+---
+description: Genix Bank Financial System Rules
+globs: ["**/genix-bank/**", "**/financial/**", "**/banking/**"]
+alwaysApply: true
+---
+
+# 🏦 GENIX BANK FINANCIAL SYSTEM RULES
+## Enterprise-Grade Financial Development Standards
+
+## Financial System Principles
+- All financial operations must be secure, compliant, and auditable
+- Implement real-time transaction processing
+- Build for $10B+ ARR scaling
+- Optimize for maximum revenue generation
+- Implement consciousness-driven financial decision making
+
+## Security & Compliance
+- Implement end-to-end encryption for all financial data
+- Follow PCI DSS compliance standards
+- Implement SOC 2 Type II controls
+- Use multi-factor authentication for all financial operations
+- Implement comprehensive audit logging
+- Follow GDPR/CCPA data protection requirements
+
+## Financial Data Handling
+- All financial data must be encrypted at rest and in transit
+- Implement data retention policies
+- Use secure key management (AWS KMS, HashiCorp Vault)
+- Implement data backup and disaster recovery
+- Follow financial data privacy regulations
+
+## API Design for Financial Services
+- Use RESTful APIs with OpenAPI 3.0 specifications
+- Implement rate limiting and throttling
+- Use JWT tokens for authentication
+- Implement request/response logging
+- Use HTTPS for all communications
+- Implement API versioning
+
+## Database Design for Financial Systems
+- Use PostgreSQL for ACID compliance
+- Implement database encryption
+- Use connection pooling
+- Implement read replicas for scaling
+- Use database migrations for schema changes
+- Implement database backup strategies
+
+## Transaction Processing
+- Implement atomic transactions
+- Use database transactions for consistency
+- Implement idempotency for API calls
+- Use event sourcing for audit trails
+- Implement compensation patterns for distributed transactions
+- Use saga pattern for complex workflows
+
+## Risk Management
+- Implement real-time risk assessment
+- Use machine learning for fraud detection
+- Implement transaction monitoring
+- Use anomaly detection algorithms
+- Implement risk scoring systems
+- Use predictive analytics for risk management
+
+## Revenue Optimization
+- Implement dynamic pricing strategies
+- Track revenue metrics in real-time
+- Optimize for maximum transaction volume
+- Implement cross-selling and upselling
+- Use A/B testing for revenue optimization
+- Implement customer lifetime value tracking
+
+## Performance Requirements
+- All financial APIs must respond in <200ms
+- Support 100,000+ transactions per second
+- Implement horizontal scaling
+- Use caching for frequently accessed data
+- Implement CDN for static assets
+- Use load balancing for high availability
+
+## Monitoring & Observability
+- Implement comprehensive logging
+- Use structured logging with correlation IDs
+- Implement metrics collection (Prometheus)
+- Use distributed tracing (Jaeger)
+- Implement alerting for critical issues
+- Use dashboards for monitoring (Grafana)
+
+## Testing for Financial Systems
+- Implement unit tests with 90%+ coverage
+- Use integration tests for API endpoints
+- Implement end-to-end tests for critical flows
+- Use performance tests for load testing
+- Implement security tests for vulnerability assessment
+- Use chaos engineering for resilience testing
+
+## Deployment for Financial Systems
+- Use blue-green deployments for zero downtime
+- Implement automated rollback procedures
+- Use infrastructure as code (Terraform)
+- Implement environment parity
+- Use containerization (Docker)
+- Implement CI/CD pipelines
+
+## Genix Bank Specific Rules
+- All features must integrate with Genix Bank core
+- Implement digital treasury services
+- Build for AI-powered financial insights
+- Support consciousness-driven decision making
+- Implement billionaire-level wealth management
+- Build for global financial operations
+
+## Financial Reporting
+- Implement real-time financial reporting
+- Use automated report generation
+- Implement compliance reporting
+- Use data visualization for insights
+- Implement custom dashboard creation
+- Use business intelligence tools
+
+## Customer Experience
+- Implement intuitive user interfaces
+- Use responsive design for mobile access
+- Implement real-time notifications
+- Use personalization for user experience
+- Implement multi-language support
+- Use accessibility standards (WCAG 2.1)
+
+## Integration Requirements
+- Integrate with IZA OS ecosystem
+- Support third-party financial services
+- Implement webhook notifications
+- Use message queues for async processing
+- Implement event-driven architecture
+- Support API integrations
+
+## Scalability Requirements
+- Design for horizontal scaling
+- Implement auto-scaling capabilities
+- Use microservices architecture
+- Implement service mesh for communication
+- Use container orchestration (Kubernetes)
+- Implement database sharding for scale
+
+## Disaster Recovery
+- Implement automated backup procedures
+- Use multi-region deployment
+- Implement failover mechanisms
+- Use data replication for availability
+- Implement recovery time objectives (RTO)
+- Use recovery point objectives (RPO)
+
+## Code Quality Standards
+- Use TypeScript for type safety
+- Implement comprehensive error handling
+- Use dependency injection for testability
+- Implement design patterns (Repository, Factory, Observer)
+- Use clean architecture principles
+- Implement SOLID principles
+
+## Documentation Requirements
+- Document all financial APIs
+- Use OpenAPI specifications
+- Implement code documentation (JSDoc)
+- Use architecture decision records (ADRs)
+- Implement user documentation
+- Use troubleshooting guides
+
+## Continuous Improvement
+- Implement regular security audits
+- Use performance monitoring and optimization
+- Implement feature flagging for gradual rollouts
+- Use A/B testing for feature validation
+- Implement feedback collection and analysis
+- Use metrics-driven development

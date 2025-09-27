@@ -1,0 +1,127 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://iza-os.com/applications/financial",
+  "name": "Financial",
+  "description": "Glass-morphism powered website with AI agent integration",
+  "url": "https://financial.iza-os.com",
+  "applicationCategory": "WebApplication",
+  "operatingSystem": "Web Browser",
+  "softwareVersion": "3.0.0",
+  "datePublished": "2024-01-01",
+  "dateModified": "2025-09-19T14:46:19.581638",
+  "author": {
+    "@type": "Organization",
+    "name": "IZA OS",
+    "url": "https://iza-os.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "IZA OS",
+    "url": "https://iza-os.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "featureList": [
+    "Glass-morphism UI Design",
+    "AI Agent Orchestration",
+    "Performance Optimized",
+    "Responsive Design",
+    "Accessibility Compliant",
+    "Enterprise Security",
+    "Real-time Monitoring",
+    "Auto-scaling Infrastructure"
+  ],
+  "screenshot": "https://financial.iza-os.com/screenshot.png",
+  "downloadUrl": "https://github.com/iza-os/financial",
+  "programmingLanguage": [
+    "JavaScript",
+    "TypeScript",
+    "JSX",
+    "TSX"
+  ],
+  "runtimePlatform": "Node.js",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "softwareRequirements": "Web Browser",
+  "memoryRequirements": "512MB RAM",
+  "storageRequirements": "100MB disk space",
+  "permissions": "Internet access required",
+  "releaseNotes": "Latest version with glass-morphism UI and AI agent integration",
+  "softwareHelp": "https://iza-os.com/docs/financial",
+  "supportingData": {
+    "@type": "DataCatalog",
+    "name": "IZA OS Data Catalog",
+    "description": "Structured data for all IZA OS applications",
+    "url": "https://iza-os.com/data-catalog"
+  },
+  "isPartOf": {
+    "@type": "SoftwareApplication",
+    "name": "IZA OS Ecosystem",
+    "url": "https://iza-os.com"
+  },
+  "hasPart": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Glass-Morphism Components",
+      "description": "Reusable UI components with frosted glass effects"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "AI Agent Integration",
+      "description": "Autonomous agent orchestration system"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Performance Monitor",
+      "description": "Real-time performance tracking and optimization"
+    }
+  ],
+  "maintainer": {
+    "@type": "SoftwareAgent",
+    "name": "IZA OS Maintenance Agent",
+    "description": "Automated maintenance and updates"
+  },
+  "installUrl": "https://github.com/iza-os/financial/install",
+  "updateUrl": "https://github.com/iza-os/financial/update",
+  "uninstallUrl": "https://github.com/iza-os/financial/uninstall",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "150",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Developer"
+      },
+      "reviewBody": "Excellent glass-morphism design with seamless AI agent integration. Performance is outstanding.",
+      "datePublished": "2024-12-15"
+    }
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://financial.iza-os.com/#webpage",
+    "name": "Financial - IZA OS Application",
+    "description": "Glass-morphism powered website with AI agent integration",
+    "url": "https://financial.iza-os.com",
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://financial.iza-os.com/#website",
+      "name": "Financial",
+      "url": "https://financial.iza-os.com"
+    }
+  }
+}

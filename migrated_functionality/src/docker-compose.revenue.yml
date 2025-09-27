@@ -1,0 +1,160 @@
+services:
+  genix-bank:
+    build: ./repositories/genix-bank
+    ports:
+      - "8081:8081"
+    environment:
+      - STRIPE_API_KEY=${STRIPE_API_KEY}
+      - REVENUE_MODE=production
+      - DATABASE_URL=postgresql://revenue_user:${DB_PASSWORD}@postgres:5432/iza_os_revenue
+    volumes:
+      - ./data/financial:/app/data
+    networks:
+      - revenue-network
+    labels:
+      - "revenue.stream=financial_services"
+      - "revenue.target=$200,000/month"
+    depends_on:
+      - postgres
+      - redis
+      
+  iza-os-core:
+    build: ./repositories/iza-os-core
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://revenue_user:${DB_PASSWORD}@postgres:5432/iza_os_revenue
+      - REVENUE_TRACKING=true
+      - NODE_ENV=production
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - revenue-network
+    labels:
+      - "revenue.stream=saas"
+      - "revenue.target=$997,000/month"
+      
+  agent-orchestra:
+    build: ./repositories/iza-os-agents
+    ports:
+      - "8082:8082"
+    environment:
+      - AI_MODELS_PATH=/app/models
+      - REVENUE_OPTIMIZATION=true
+      - DATABASE_URL=postgresql://revenue_user:${DB_PASSWORD}@postgres:5432/iza_os_revenue
+    volumes:
+      - ./models:/app/models
+    networks:
+      - revenue-network
+    labels:
+      - "revenue.stream=agent_orchestration"
+      - "revenue.target=$500,000/month"
+    depends_on:
+      - postgres
+      - redis
+      
+  enterprise-dashboard:
+    build: ./repositories/iza-os-enterprise
+    ports:
+      - "8086:8086"
+    environment:
+      - REVENUE_MODE=enterprise
+      - DATABASE_URL=postgresql://revenue_user:${DB_PASSWORD}@postgres:5432/iza_os_revenue
+    networks:
+      - revenue-network
+    labels:
+      - "revenue.stream=enterprise_consulting"
+      - "revenue.target=$50,000/engagement"
+    depends_on:
+      - postgres
+      - redis
+      
+  youtube-content:
+    build: ./youtube_content
+    ports:
+      - "8083:8083"
+    environment:
+      - YOUTUBE_API_KEY=${YOUTUBE_API_KEY}
+      - CONTENT_GENERATION=true
+    volumes:
+      - ./content/generated:/app/generated
+    networks:
+      - revenue-network
+    labels:
+      - "revenue.stream=content_creation"
+      - "revenue.target=$50,000/month"
+      
+  api-licensing:
+    build: ./repositories/iza-os-integrations
+    ports:
+      - "8084:8084"
+    environment:
+      - API_LICENSING=true
+      - RATE_LIMIT=1000000
+      - DATABASE_URL=postgresql://revenue_user:${DB_PASSWORD}@postgres:5432/iza_os_revenue
+    networks:
+      - revenue-network
+    labels:
+      - "revenue.stream=api_licensing"
+      - "revenue.target=$100,000/month"
+    depends_on:
+      - postgres
+      - redis
+      
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=iza_os_revenue
+      - POSTGRES_USER=revenue_user
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql/init:/docker-entrypoint-initdb.d
+    networks:
+      - revenue-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U revenue_user -d iza_os_revenue"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - revenue-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+    networks:
+      - revenue-network
+    depends_on:
+      - genix-bank
+      - iza-os-core
+      - agent-orchestra
+      - enterprise-dashboard
+      - youtube-content
+      - api-licensing
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  revenue-network:
+    driver: bridge

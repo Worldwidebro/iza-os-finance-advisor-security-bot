@@ -1,0 +1,85 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "IZA OS Enterprise Ecosystem",
+  "alternateName": "IZA OS",
+  "description": "Unified TypeScript-first Autonomous Agent Ecosystem with 1,842 AI agents, MEMU dashboards, and WorldwideBro global infrastructure",
+  "url": "https://worldwidebro.com/iza-os",
+  "logo": "https://worldwidebro.com/iza-os/logo.png",
+  "foundingDate": "2024-01-01",
+  "founder": {
+    "@type": "Person",
+    "name": "IZA OS Team"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "Global",
+    "addressRegion": "Worldwide"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-555-IZA-OS-01",
+    "contactType": "customer service",
+    "email": "support@worldwidebro.com"
+  },
+  "sameAs": [
+    "https://github.com/iza-os",
+    "https://worldwidebro.com",
+    "https://cloud.activepieces.com/projects/Q8X54IdSpd1RTFQxrAnKq"
+  ],
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "API Management",
+    "Automated Testing",
+    "Global Infrastructure",
+    "Enterprise Software",
+    "Microservices Architecture",
+    "Model Context Protocol",
+    "Workflow Automation"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "IZA OS Enterprise Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI Agent System",
+          "description": "1,842 autonomous AI agents for enterprise operations"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "API Management Platform",
+          "description": "Complete API lifecycle management with JWT and OAuth2"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Global Infrastructure",
+          "description": "WorldwideBro multi-region deployment and monitoring"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Workflow Automation",
+          "description": "Activepieces Cloud with 417 integration pieces"
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "1842",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
